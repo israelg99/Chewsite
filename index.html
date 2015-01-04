@@ -1,0 +1,93 @@
+<html>
+<head>
+	<title> ChewSite </title>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.8.3.min.js" ></script>
+	<script type="text/javascript" src="script.js" ></script>
+</head>
+
+<body>
+<div id="wrapper">
+    <div id="sidebar">
+		<div id="upperSidebar">
+			<input type="button" class="minimal" id="HeaderBT" value="Header" />
+			<input type="button" class="minimal" id="MenuBT" value="Menu" />
+			<input type="button" class="minimal" id="ContentBT" value="Content" />
+			<input type="button" class="minimal" id="FooterBT" value="Footer" />
+			<input type="button" class="minimal" id="BodyBT" value="Body" />
+		</div>
+		<div id="itembar">
+			<div id="HeaderBT_section" class="section">
+				<div><input type="button" class=" item itemBT" id="bg_logo" value="BG with Logo" />
+				<label><div style=" display:block; font-family: times, Times New Roman, times-roman, georgia, serif; color: #444; margin:3% 0px 0px 15%; font-size: 45px; letter-spacing: -2px; font-weight: bold;">Your Logo</div></label></div>
+			</div>
+			<div id="MenuBT_section" class="section">
+				<div><input type="button" class=" item itemBT" id="gray_menu" value="Simple Menu" /><label><style type="text/css">
+						#nav {
+							padding:0px;margin:0px;border:0px solid red;display: inline-block;
+						}
+						#nav li {
+							display:inline;
+						}
+						#nav li a {
+							border:0px solid red; font-family:Arial; font-size:12px; text-decoration: none; float:left; padding:10px; background-color: #333333; color:#ffffff;
+						}
+						#nav li a:hover {
+							background-color:#9B1C26;
+						}
+					</style>
+					<div style="width:100%;background-color:#333333;"><ul id="nav">
+						<li><a class="menulink" href="javascript:void(0)" id="Sample">Sample</a></li>
+						<li><a class="menulink" href="javascript:void(0)" id="Sample1">Sample1</a></li>
+						<li><a class="menulink" href="javascript:void(0)" id="Sample2">Sample2</a></li></ul>
+				</div></label></div>
+			</div>
+			<div id="ContentBT_section" class="section">
+				<div id="haveMenu">
+					<div id="pageSelect">
+						<select>
+						</select>
+					</div>
+					<div id="contentKind">
+						<p class="text textBold textUnderLine" >Choose Content Layout</p>
+					</div>
+					<div id="layoutsItems">
+						<input type="button" class="citem itemBT" id="vertlay" value="Vertical" />
+						<input type="button" class="citem itemBT" id="horilay" value="Horizontal" />
+					</div>
+				</div>
+				<div id="donthavemenu">
+					<p class="text textBold textUnderLine" >You should have menu first!</p>
+				</div>
+			</div>
+			<div id="FooterBT_section" class="section">
+				<div><input type="button" class=" item itemBT" id="black_foot" value="Simple Footer" /><label><div style="border-top:1px solid black;height:100%;width:100%;background-color:#CCC;text-align:center;font-size:18px;font-family: 'Helvetica Neue', 'Lucida Grande', Helvetica, Arial, Verdana, sans-serif;"><div id="footerdivheightchanger" style="width:100%;height:30%;"></div><label>Foooter Here</label></div></label></div>
+			</div>
+			<div id="BodyBT_section" class="section">
+				<div><input type="button" class=" item itemBT" id="BG_body" value="Background Color / Image" /><label></label></div>
+			</div>
+		</div>
+		<div id="editbar">
+		</div>
+	</div>
+    <div id="board">
+		<div id="AlertSizeSite">
+			<div class="mainAlertSize">
+				<label>The Width is 800px and The Height is 600px</label>
+			</div>
+			<div id="submitAlertSize">
+				<input class="clean-gray" type="button" name="submitSize" value="Create Wrapper!" />
+			</div>
+		</div>
+		<div id="ChewSite_Wrapper">
+			<div id="ChewSite">
+				<div id="HeaderBT" style="height:15%; width:100%"></div>
+				<div id="MenuBT" style="height:5%; width:100%; text-align: center;"></div>
+				<div id="ContentBT" style="height:70%; width:100%"></div>
+				<div id="FooterBT" style="height:10%; width:100%"></div>
+			</div>
+		</div>
+    </div>
+</div>
+</body>
+</html>
